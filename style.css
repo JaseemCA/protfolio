@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #1f242d;
+    color: #fff;
+
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: #1f242d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, 2);
+}
+
+header img {
+    width: 5vw;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+}
+
+nav a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 35vw;
+    border-radius: 50px;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #0ef;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid green;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #0ef;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social-media a:hover {
+    background: green;
+    color: black;
+    box-shadow: 0 0 1rem green;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 2.8rem;
+    background: transparent;
+    border-radius: 4rem;
+    border: .15rem solid green;
+
+    font-size: 1.6rem;
+    color: #0ef;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background-color: green;
+    color: black;
+}
+
+
+
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #323946;
+}
+
+
+
+
+.about-img img {
+    width: 35vw;
+    border-radius: 50px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+
+}
+
+.about-content h3 span {
+    color: #0ef;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/*Services*/
+
+.services h2 {
+    margin-bottom: 5rem;
+
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background-color: #323946;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #1f242d;
+    transition: .5 ease;
+}
+
+.services-container .services-box:hover {
+    border-color: #0ef;
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: green;
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+qualifications
+.qualification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #323946;
+}
+
+
+
+
+.qualification-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.qualification-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.qualification-content h3 {
+    font-size: 2.6rem;
+
+}
+
+.qualification-content h3 span {
+    color: #0ef;
+}
+
+.qualification-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.works {
+    background: #323946;
+}
+
+.works h2 {
+    margin-bottom: 5rem;
+
+}
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+
+}
+
+.works-container .works-box {
+    flex: 1 1 30rem;
+    background-color: #1f242d;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #323946;
+    transition: .5 ease;
+}
+
+.works-container .works-box:hover {
+    border-color: #0ef;
+    transform: scale(1.02);
+}
+
+.works-box i {
+    font-size: 7rem;
+    color: green;
+}
+
+.works-box h3 {
+    font-size: 2.6rem;
+
+}
+
+.works-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #323946;
+    border-radius: .8rem;
+    margin: .7rem 0;
+
+}
+
+.contact form .input-box input {
+    width: 49%;
+
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #323946;
+}
+
+.footer .footer-text {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #0ef;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem #0ef;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: #323946;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
